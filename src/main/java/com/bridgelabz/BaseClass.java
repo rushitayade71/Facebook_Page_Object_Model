@@ -45,12 +45,12 @@ public class BaseClass {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(prop.getProperty("URL"));
     }
-    public void screenshot() throws IOException {
-        TakesScreenshot screenshot = (TakesScreenshot) driver;
-        File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
-        File destinationFile = new File("./com/bridgelabz/screenshots" + "facebook" + System.currentTimeMillis() + ".png");
-        FileHandler.copy(sourceFile, destinationFile);
-    }
+//    public void screenshot() throws IOException {
+//        TakesScreenshot screenshot = (TakesScreenshot) driver;
+//        File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
+//        File destinationFile = new File("./com/bridgelabz/screenshots" + "facebook" + System.currentTimeMillis() + ".png");
+//        FileHandler.copy(sourceFile, destinationFile);
+//    }
 
 }
 
